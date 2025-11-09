@@ -109,6 +109,7 @@ def run_log_quantizer():
         print(f"An error occurred during audio playback: {e}")
 
     print("--- End of log-quantizer script ---")
+    plt.savefig('log_quantizer_plots.png')
     plt.show()
 
 if __name__ == '__main__':

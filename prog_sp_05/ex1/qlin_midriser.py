@@ -92,7 +92,6 @@ def run_linear_quantizer():
 
     plt.tight_layout()
     print("Showing plots...")
-    plt.show(block=False) # Show plot but don't block audio
 
     # Play audio
     # Note: Original script hardcodes 16000 Hz for playback.
@@ -113,7 +112,8 @@ def run_linear_quantizer():
         print("You may need to configure your audio device.")
         
     print("--- End of linear quantizer script ---")
-    plt.waitforbuttonpress() # Wait for user to close plot
+    plt.savefig('linear_quantizer_plots.png')
+    plt.show() # Show plot but don't block audio
 
 if __name__ == '__main__':
     run_linear_quantizer()

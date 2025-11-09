@@ -130,6 +130,7 @@ def run_lloyd_quantizer():
         print(f"An error occurred during audio playback: {e}")
 
     print("--- End of Lloyd-quantizer script ---")
+    plt.savefig('lloyd_quantizer_plots.png')
     plt.show()
 
 if __name__ == '__main__':
