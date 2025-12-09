@@ -27,7 +27,7 @@ y[(x0 >= 0) & (x1 >= 0)] = 0
 y[(x0 < 0) & (x1 >= 0)] = 1
 y[(x0 < 0) & (x1 < 0)] = 0
 y[(x0 >= 0) & (x1 < 0)] = 1
-y = np.eye(2)[y.astype(int)]  # one-hotエンコーディング
+y = np.eye(2)[y.astype(int)]  # one-hot
 
 # Separate data into traing data and evaluation data
 X_train, X_eval = X[:80000], X[80000:]
